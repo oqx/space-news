@@ -1,0 +1,47 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.9.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "test": "vitest",
+    "preview": "vite preview",
+    "generate:types": "curl -s https://api.spaceflightnewsapi.net/v4/schema/ -o swagger.json && pnpx swagger-typescript-api generate --path ./swagger.json --generate-union-enums false --name index.ts --no-client --generate-route-types false --clean-output -o ./src/types"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.74.4",
+    "@tanstack/react-router": "^1.117.1",
+    "@tanstack/react-virtual": "^3.13.6",
+    "@tanstack/router-plugin": "^1.117.1",
+    "classnames": "^2.5.1",
+    "jotai": "^2.12.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tiny-invariant": "^1.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^16.0.0",
+    "jsdom": "^26.1.0",
+    "msw": "^2.7.5",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1",
+    "vitest": "^3.1.2"
+  }
+}

@@ -1,0 +1,12 @@
+.layout {
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    &.layout--wide {
+        max-width: 1260px;
+    }
+
+    &.layout--narrow {
+        max-width: 860px;
+    }
+}

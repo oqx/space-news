@@ -1,0 +1,13 @@
+.form {
+    container-type: inline-size;
+    text-align: center;
+    width: 100%;
+
+    .form__input {
+        padding: 1rem;
+        width: 325px;
+        @container (min-width: 410px) {
+            width: 400px;
+        }
+    }
+}

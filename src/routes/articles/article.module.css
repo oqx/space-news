@@ -1,0 +1,30 @@
+.card {
+    display: block;
+    flex-grow: 1;
+    margin: 0 auto 10rem auto;
+    max-width: 960px;
+    padding: 0 2rem;
+
+    .card__article {
+        width: 100%;
+    }
+
+    .card__heading {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .card__body {
+        font-family: var(--system-font-stack);
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    .card__img {
+        border-radius: 5px;
+        box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.4);
+        float: right;
+        height: 330px;
+        width: 400px;
+    }
+}

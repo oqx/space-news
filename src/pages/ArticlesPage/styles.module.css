@@ -1,0 +1,28 @@
+.articles {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @media(min-width: 50rem) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    @media(min-width: 80rem) {
+        padding: 0 0;
+    }
+
+    .articles__features {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.articles__nav {
+    display: flex;
+    gap: 1rem;
+    padding-top: 4rem;
+    justify-content: center;
+    margin: 0 auto 4rem auto;
+    width: 325px;
+}

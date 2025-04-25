@@ -1,0 +1,31 @@
+.sidebar {
+    list-style: none;
+    padding: 0;
+
+    .sidebar__li {
+        padding: 1rem;
+        border-bottom: 1px solid #f5f5f5;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .sidebar__title {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .sidebar__author {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+
+    .sidebar__li:first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .sidebar__li:last-child {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}

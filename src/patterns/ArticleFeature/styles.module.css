@@ -1,0 +1,48 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @container (min-width: 37.5rem) {
+        border-bottom: 1px solid var(--border-color);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        max-width: 800px;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .card__article {
+        width: 100%;
+        
+        @container (min-width: 37.5rem) {
+            width: 230px
+        }
+    }
+
+    .card__heading {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .card__body {
+        -webkit-box-orient: vertical;  
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        font-family: var(--system-font-stack);
+        font-size: 1rem;
+        overflow: hidden;
+        text-wrap: balance;
+    }
+
+    .card__img {
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.4);
+        height: 330px;
+        max-width: 500px;
+    }
+}
+
+.container {
+    container-type: inline-size;
+}

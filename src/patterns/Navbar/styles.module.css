@@ -1,0 +1,53 @@
+.navbar {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4rem;
+    text-align: center;
+    width: 100%;
+
+    .navbar__title {
+        border-bottom: 1px solid light-dark(#000, #fff);;
+        border-top: 1px solid light-dark(#000, #fff);;
+        color: light-dark(#000, #fff);
+        font-size: 3.8rem;
+        letter-spacing: -3px;
+        text-decoration: none;
+    }
+
+    .navbar__upsell {
+        align-items: center;
+        background: rgb(0 0 0 / 29%);
+        display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .navbar__links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: 2rem 1rem 0;
+    }
+
+    .navbar__input {
+        max-width: 320px;
+    }
+
+    .navbar__form {
+        display: flex;
+        gap: 1rem;
+    }
+
+
+    .navbar__link {
+        color: light-dark(#000, #fff);
+        font-family: var(--system-font-stack);
+        font-weight: 400;
+        &:hover {
+            color: var(--cta-color);
+        }
+    }
+    
+}

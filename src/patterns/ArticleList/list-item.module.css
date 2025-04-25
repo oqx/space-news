@@ -1,0 +1,16 @@
+.item {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+
+    .item__title {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .item__author {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+}

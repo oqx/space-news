@@ -1,0 +1,20 @@
+.btn {
+    background: var(--cta-color);
+    min-width: 30px;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-family: var(--system-font-stack);
+    color: var(--cta-text-color);
+
+    &:hover {
+        background: var(--cta-hover-color);
+    }
+
+    &.btn--secondary {
+        background: var(--cta-secondary-color);
+
+        &:hover {
+            background: var(--cta-secondary-hover-color);
+        }
+    }
+}
