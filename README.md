@@ -36,3 +36,17 @@ pnpm i
 ```sh
 pnpm dev
 ```
+
+### Test
+
+Testing is done with Vitest and Mock Service Worker (MSW). MSW intercepts XHR requests so the unit test layer doesn't have to worry about it.
+
+```sh
+pnpm test
+```
+
+### Build
+
+```sh
+pnpm build
+```
