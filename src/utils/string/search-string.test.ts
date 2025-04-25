@@ -7,7 +7,7 @@ import {
 describe("parseSearchParametersToObject", () => {
   it.each([
     ["?foo=bar&baz=qux", { foo: "bar", baz: "qux" }],
-    ["?a=1&a=2", { a: "2" }], // URLSearchParams keeps the last value
+    ["?a=1&a=2", { a: "2" }],
     ["?key=value&empty=", { key: "value", empty: "" }],
     ["", {}],
     [undefined, undefined],

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { isObject } from "./object"; // Adjust the import path accordingly
+import { isObject } from "./object";
 
 describe("isObject", () => {
   it.each([

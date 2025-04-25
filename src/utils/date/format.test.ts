@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { formatDateStringToFullDate } from "./format"; // update path accordingly
+import { formatDateStringToFullDate } from "./format";
 
 describe("formatDateStringToFullDate", () => {
   it.each([
@@ -13,6 +13,6 @@ describe("formatDateStringToFullDate", () => {
 
   it("throws or returns invalid for malformed date string", () => {
     const input = "not-a-date";
-    expect(() => formatDateStringToFullDate(input)).toThrow(); // or test for thrown error if you change implementation
+    expect(() => formatDateStringToFullDate(input)).toThrow();
   });
 });
