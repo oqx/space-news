@@ -26,8 +26,6 @@ export const fetcher = async <T>(
     )}`
   );
 
-  console.log(fetchFunction);
-
   const resp = await fetchFunction;
 
   if (!resp.ok) {
