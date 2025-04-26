@@ -55,6 +55,9 @@ export default tseslint.config(
             props: {
               properties: false,
             },
+            env: {
+              environment: false,
+            },
           },
         },
       ],

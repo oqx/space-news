@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "test": "vitest",
     "preview": "vite preview",
-    "generate:types": "curl -s https://api.spaceflightnewsapi.net/v4/schema/ -o swagger.json && pnpx swagger-typescript-api generate --path ./swagger.json --generate-union-enums false --name index.ts --no-client --generate-route-types false --clean-output -o ./src/types"
+    "generate:types": "curl -s https://api.spaceflightnewsapi.net/v4/schema/ -o swagger.json && pnpx swagger-typescript-api generate --path ./swagger.json --generate-union-enums false --name index.ts --no-client --generate-route-types false --clean-output -o ./src/types",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.74.4",
@@ -37,6 +38,7 @@
     "eslint-plugin-unicorn": "^58.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "msw": "^2.7.5",
     "typescript": "~5.7.2",
