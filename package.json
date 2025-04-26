@@ -4,6 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "packageManager": "pnpm@10.9.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -19,7 +23,6 @@
     "@tanstack/react-virtual": "^3.13.6",
     "@tanstack/router-plugin": "^1.117.1",
     "classnames": "^2.5.1",
-    "jotai": "^2.12.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tiny-invariant": "^1.3.3"

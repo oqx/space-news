@@ -1,6 +1,6 @@
 import { getRouteApi } from "@tanstack/react-router";
 import { formatDateStringToFullDate } from "../../utils";
-import styles from "./article.module.css";
+import styles from "./styles.module.css";
 
 const { useLoaderData } = getRouteApi("/articles/$articleId");
 
