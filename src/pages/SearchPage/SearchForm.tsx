@@ -1,11 +1,16 @@
 import { useNavigate } from "@tanstack/react-router";
 import { FormEventHandler, useCallback } from "react";
 import styles from "./search-form.module.css";
-import { Input } from "../../patterns";
+import { Button, Input, SearchIcon } from "../../patterns";
 
 export const SearchForm = () => {
   const nav = useNavigate();
 
+  /**
+   * @summary On submit, this fn updates the URL query params to trigger an update
+   * to {@link import('@tanstack/router').useSearch}, which cycles the
+   * search request.
+   */
   const onSearch: FormEventHandler<HTMLFormElement> = useCallback(
     (event) => {
       event.preventDefault();
@@ -22,6 +27,9 @@ export const SearchForm = () => {
     [nav]
   );
 
+  /**
+   * I'm a firm believer in using `<form>`, as it
+   */
   return (
     <form className={styles.form} onSubmit={onSearch}>
       <Input
@@ -29,6 +37,14 @@ export const SearchForm = () => {
         name="search"
         placeholder="Search for an article"
       />
+      <Button
+        type="submit"
+        variant="primary"
+        className={styles.form__btn}
+        label="search"
+      >
+        <SearchIcon size={16} color="white" />
+      </Button>
     </form>
   );
 };

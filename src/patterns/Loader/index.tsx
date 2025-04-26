@@ -1,5 +1,8 @@
 export const Loader = () => (
   <svg
+    aria-live="polite"
+    aria-busy="true"
+    aria-label="Loading..."
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 200 200"
     width="200"

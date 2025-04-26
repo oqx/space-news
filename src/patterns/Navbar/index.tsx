@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { Input } from "../Input";
 import { FormEventHandler, useCallback } from "react";
 import { Button } from "../Button";
+import { SearchIcon } from "../Icons";
 
 export const Navbar = () => {
   const nav = useNavigate();
@@ -31,7 +32,7 @@ export const Navbar = () => {
             <Input placeholder="Search for an article" name="search"></Input>
           </div>
           <Button variant="primary" type="submit">
-            Search
+            <SearchIcon size={12} color="white" />
           </Button>
         </form>
       </div>

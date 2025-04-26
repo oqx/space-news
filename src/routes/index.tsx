@@ -7,8 +7,7 @@ type SearchParameters = Parameters<typeof fetchArticles>[0];
 /**
  * ### Route
  *
- * @summary Executes data loading and handles query parameters. I co-located
- * it with the JSX to avoid circular references.
+ * @summary Executes data loading and handles query parameters.
  */
 export const Route = createFileRoute("/")({
   component: ArticlesPage,

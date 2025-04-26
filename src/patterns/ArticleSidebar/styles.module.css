@@ -4,7 +4,7 @@
 
     .sidebar__li {
         padding: 1rem;
-        border-bottom: 1px solid #f5f5f5;
+        border-bottom: 1px solid var(--border-color);
         border-left: 1px solid var(--border-color);
     }
 

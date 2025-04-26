@@ -8,6 +8,10 @@ type Props = {
   style?: CSSProperties;
 } & HTMLProps<HTMLLIElement>;
 
+/**
+ * @summary Basic card-like list item, created for virtualization, but can be used
+ * for anything.
+ */
 export const ArticleListItem = forwardRef<HTMLLIElement, Props>(
   ({ article, style }, reference) => {
     return (

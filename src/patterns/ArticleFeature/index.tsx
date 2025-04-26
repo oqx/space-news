@@ -8,6 +8,10 @@ type Props = {
   article: Article;
 };
 
+/**
+ * @summary A large hero-like feature section for an article, which displays a
+ * large photo with title and summary to the left.
+ */
 export const ArticleFeature: FC<Props> = ({ article }) => {
   return (
     <div className={styles.container} data-testid="ArticleFeature">

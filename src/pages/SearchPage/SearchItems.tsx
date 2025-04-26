@@ -73,7 +73,9 @@ export const SearchItems: FC = () => {
 
   if (isFetched && rows.length === 0) {
     return (
-      <p>Could not find results for &quot;{searchParameters.search}&quot;.</p>
+      <p aria-live="polite" aria-atomic="true">
+        Could not find results for &quot;{searchParameters.search}&quot;.
+      </p>
     );
   }
 
@@ -81,6 +83,8 @@ export const SearchItems: FC = () => {
     <>
       {isFetched && rows?.length > 0 && (
         <div
+          aria-live="polite"
+          aria-atomic="true"
           ref={containerReference}
           style={{
             height: `${rowVirtualizer.getTotalSize()}px`,

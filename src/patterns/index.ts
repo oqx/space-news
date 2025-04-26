@@ -6,3 +6,4 @@ export * from "./Loader";
 export * from "./PageLayout";
 export * from "./Input";
 export * from "./Button";
+export * from "./Icons";

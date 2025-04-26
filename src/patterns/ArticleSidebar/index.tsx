@@ -7,6 +7,9 @@ type Props = {
   articles: Article[];
 };
 
+/**
+ * @summary Generates a vertical list of articles -- includes title and author.
+ */
 export const ArticleSidebar: FC<Props> = ({ articles }) => {
   return (
     <ul className={styles.sidebar} data-testid="ArticleSidebar">
